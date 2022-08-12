@@ -99,4 +99,4 @@ if __name__ == "__main__":
         f.create_dataset("cluster", shape=(vectors.shape[0],), data=np.zeros((vectors.shape[0],), dtype=np.int32))
         f.create_dataset("notes", shape=(vectors.shape[0],), data=np.array(ips))
 
-    print "Finished prebuilding samples"
+    print("Finished prebuilding samples")

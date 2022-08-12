@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     counter = Counter(clusters.tolist())
     for key in sorted(counter.keys()):
-        print "Label {0} has {1} samples".format(key, counter[key])
+        print("Label {0} has {1} samples".format(key, counter[key]))
 
     # create new hdf5 with clusters added
     with h5py.File(output_path, "w") as f:

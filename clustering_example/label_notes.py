@@ -24,8 +24,8 @@ if __name__ == "__main__":
     if args.label is None:
         for cluster_id in sorted(set(clusters.tolist())):
             for ip in ips[clusters == cluster_id]:
-                print cluster_id, int2ip(ip)
+                print(cluster_id, int2ip(ip))
     else:
         cluster_id = args.label
         for ip in ips[clusters == cluster_id]:
-            print cluster_id, int2ip(ip)
+            print(cluster_id, int2ip(ip))

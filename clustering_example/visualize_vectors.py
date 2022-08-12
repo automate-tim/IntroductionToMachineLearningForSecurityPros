@@ -7,7 +7,7 @@ import h5py
 def visualize(vectors):
     pca = PCA(n_components=3)
     projected_vectors = pca.fit_transform(vectors)
-    print projected_vectors.shape
+    print(projected_vectors.shape)
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     plt.scatter(
